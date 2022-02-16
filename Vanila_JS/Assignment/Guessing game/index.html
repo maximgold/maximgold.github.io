@@ -9,21 +9,22 @@
   </head>
   <body>
     <h1>Random Number Game</h1>
-    <form id="input_number">
-      <label for="number" class="input_label">Generate a number between 0 and</label>
-      <input type="number" min="0" />
-    </form>
-    <form id="guess_number">
-      <label for="number" class="guess_label">Guess the number:</label>
-      <input type="number" min="0" />
-      <input type="submit" value="Play!" />
-    </form>
-    
-  </body>
-
-  <div class="hidden">
-    <span></span>
-    <span></span>
-  <div>
-  <script src="guess.js"></script>
+    <div class="input_area">
+      <form id="set_number">
+        <label for="number" class="input_label">Generate a number between 0 and</label>
+        <input id="inputSetNum" type="number" min="1" required />
+        <br>
+        <br>
+        <label for="number" class="guess_label">Guess the number:</label>
+        <input id = "inputGuessNum" type="number" min="1" required />
+        <input id = "submitNum" type="submit" value="Play!" />
+      </form>
+    </div>
+    <div id="display">
+      <span></span>
+      <br>
+      <b><span></span></b>
+    </div>
+    <script src="guess.js"></script>
+</body>
 </html>
